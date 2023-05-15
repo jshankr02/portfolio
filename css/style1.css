@@ -1,0 +1,431 @@
+*{margin:0px; padding:0px;}
+li{list-style:none;}
+a{text-decoration:none;}
+
+/*page1-header*/
+#header{
+    width:100%;
+    height:100vh;
+    background:url(../img/page1.png)no-repeat;background-size:cover;
+}
+.line{
+    width:75%;
+    margin:0px auto;
+    padding-top:35px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.line li{
+    width:45%;
+    height:1px; 
+    background:white;
+    margin:22px 0px;
+}
+.leftline{
+    width:300px;
+    justify-content: space-between;
+    font-size:11px;
+    color:white;
+    display:flex;
+    letter-spacing:2px;
+    position:absolute;top:71px;left:15%;
+}
+.rightline{
+    width:300px;
+    justify-content: space-between;
+    font-size:11px;
+    color:white;
+    display:flex;
+    letter-spacing:2px;
+    position:absolute;top:71px;right:15%;
+}
+#header h1{
+    position:absolute;top:35px;left:50%;transform:translateX(-50%);
+}
+#header h1 img{
+    width:100px;
+}
+#header h1 a{
+    width:100%; 
+    height:100%; 
+    display:block;
+}
+#header h2{
+    font-size:12vw;
+    color:#bea4eb;
+    font-family: 'Cabin Sketch', cursive;
+    position:absolute; top:40%;left:50%;transform:translateX(-50%);
+    opacity:0
+}
+#header h2 span{
+    color:white;
+}
+.menu{
+    width:450px; 
+    display:flex;
+    justify-content: space-between;
+    position:absolute;top:52%;left:50%;transform: translateX(-50%);
+    z-index:99;
+}
+.menu a{
+    width:100%;
+    height:100%;
+    display:block;
+    color:white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.menu a:hover{
+    color:#e6b7f5;
+    text-decoration:line-through; 
+}
+.menu li:nth-of-type(3) a:hover{
+    color:#3b3b3b;
+    text-decoration:underline wavy;
+}
+.menu li:nth-of-type(4) a:hover{
+    color:#3b3b3b;
+    text-decoration:underline wavy;
+}
+.webpic{
+    width:330px;
+    position:absolute;bottom:12%; left:15%;
+}
+.light{
+    width:140px;
+    position:absolute;right:26%;top:15%;
+    animation:light 2s infinite;
+}
+@keyframes light{
+    0%{width:140px;opacity:0.7}
+    50%{width:135px;opacity:0.9}
+    100%{width:140px;opacity:0.7}
+}
+.piano{
+    width:130px;
+    position:absolute;bottom:15%;left:38%;
+    animation:piano 3s;
+}
+@keyframes piano{
+    0%{width:50px;position:absolute;bottom:15%;left:20%;opacity:0}
+    100%{width:130px;position:absolute;bottom:15%;left:38%}
+}
+.flower{
+    width:100px; 
+    position:absolute;bottom:19%;left:48%;
+    animation:flower 3s;
+}
+@keyframes flower{
+    0%{width:50px;opacity:0;position:absolute;bottom:15%;left:20%}
+    100%{width:100px;position:absolute;bottom:19%;left:48%}
+}
+.drawing{
+    width:120px;
+    position:absolute;bottom:25%;left:57%;
+    animation:drawing 3.5s;
+}
+@keyframes drawing{
+    0%{width:50px;opacity:0;position:absolute;bottom:15%;left:20%;}
+    100%{width:120px;position:absolute;bottom:25%;left:57%;}
+}
+.camera{
+    width:130px;
+    position:absolute;bottom:15%;left:68%;
+    animation:camera 4s;
+}
+@keyframes camera{
+    0%{width:50px;opacity:0;position:absolute;bottom:15%;left:20%;}
+    100%{width:130px;position:absolute;bottom:15%;left:68%}
+}
+.airplane{
+    width:230px;
+    position:absolute;bottom:25%;left:77%;
+    animation:airplane 4.5s;
+}
+@keyframes airplane{
+    0%{width:50px; opacity:0;position:absolute;bottom:15%;left:20%;}
+    100%{width:230px;position:absolute;bottom:25%;left:77%;}
+}
+.star1{
+    width:55px;
+    position:absolute;top:26%;left:10%;
+    animation:star 10s linear infinite;
+}
+@keyframes star{
+    0%{transform:rotate(0deg);opacity:0}
+    20%{opacity:1}
+    100%{transform:rotate(360deg);}
+}
+@keyframes starminus{
+    0%{transform:rotate(0deg);opacity:0}
+    20%{opacity:1}
+    100%{transform:rotate(-360deg);}
+}
+.star2{
+    width:40px;
+    position:absolute;top:15%;left:32%;
+    animation:starminus 10s linear infinite;
+}
+.star3{
+    width:50px;
+    position:absolute;top:18%;right:40%;
+    animation:star 10s linear infinite;
+}
+.star4{
+    width:40px;
+    position:absolute;top:15%;right:20%;
+    animation:starminus 10s linear infinite;
+}
+.star5{
+    width:45px;
+    position:absolute;top:52%;left:15%;
+    animation:starminus 10s linear infinite;
+}
+.star6{
+    width:55px;
+    position:absolute;top:72%;left:30%;
+    animation:star 10s linear infinite;
+}
+.star7{
+    width:55px;
+    position:absolute;top:35%;right:10%;
+    animation:starminus 10s linear infinite;
+}
+.star8{
+    width:55px;
+    position:absolute;bottom:15%;left:10%;
+    animation:starminus 10s linear infinite;
+}
+.star9{
+    width:55px;
+    position:absolute;bottom:10%;right:20%;
+    animation:star 10s linear infinite;
+}
+.cloud{
+    width:75%;
+    position:absolute; left:13%;bottom:-10%;
+}
+.st0, .st1, .st2, .st3{
+    fill:none;
+    stroke:#F0E8F7;
+    stroke-miterlimit:10;
+}
+.st0{
+    stroke-dasharray:600;
+    stroke-dashoffset:0;
+    animation:st0 3s linear;
+}
+@keyframes st0{
+    0%{stroke-dashoffset : 600;}
+    100%{stroke-dashoffset:0;}
+}
+.st1{
+    stroke-dasharray:600;
+    stroke-dashoffset:0;
+    animation:st0 3s linear;
+}
+@keyframes st1{
+    0%{stroke-dashoffset : 600;}
+    100%{stroke-dashoffset:0;}
+}
+.st2{
+    stroke-dasharray:600;
+    stroke-dashoffset:0;
+    animation:st0 3s linear;
+}
+@keyframes st2{
+    0%{stroke-dashoffset : 600;}
+    100%{stroke-dashoffset:0;}
+}
+.st3{
+    stroke-dasharray:600;
+    stroke-dashoffset:0;
+    animation:st0 3s linear;
+}
+@keyframes st3{
+    0%{stroke-dashoffset : 600;}
+    100%{stroke-dashoffset:0;}
+}
+#navi{position:fixed; left:50px; top:50%; transform:translateY(-50%);}
+#navi li{width:15px; height:15px; background:white; border-radius:10px; margin-bottom:10px;cursor:pointer;}
+#navi li:last-child{margin-bottom:0px;}
+#navi li.on{height:40px; background:#3445f7;}
+#navi li:hover{background:#dedede}
+
+/*page2-About Me*/
+#about{
+    width:100%;
+    height:100vh;
+    background:url(../img/page2.png)no-repeat;background-size:cover;
+    background-attachment:fixed;
+    position:relative;
+}
+#about h2{
+    font-size:150px;
+    font-family: 'Bubblegum Sans', cursive;
+    color:white;
+    padding:90px 180px;
+    letter-spacing:10px;
+    opacity:0.8
+}
+#about h2 span{
+    color:#cbeee2; 
+}
+#about h3{
+    color:#98989889;
+    font-size:35px;
+    position:absolute;top:48%;left:23%;
+}
+.photo img{
+    width:330px;
+    position:absolute;top:30%;left:37%;
+    opacity:0.8
+}
+.information{
+    position:absolute;
+    right:15%;
+    top:32%;
+}
+.information li{
+    margin-bottom:30px;
+}
+.information h4{
+    color:#4577ff;
+    border-left:5px solid white;
+    padding-left:10px;
+    margin-bottom:15px;
+    font-size:18px;
+}
+.information p{
+    font-weight:bold;
+    color:#537064;
+    padding-left:13px;   
+}
+.information p span{
+    color:#747474;
+}
+.hi{
+    font-size:35px;
+    font-weight:bold;
+    color:#64718f;
+    position:absolute;left:33%;bottom:18%;
+}
+.hi span{
+    color:#4577ff;
+}
+.word{
+    width:200px;
+    position:relative;
+    position:absolute;bottom:13%; right:15%;
+}
+.word img{
+    width:100%;
+    animation:rotate_image 20s linear infinite;transform-origin:50% 50%;
+}
+@keyframes rotate_image{
+    100%{transform:rotate(360deg);}
+}
+.word p{
+    font-weight:bold;
+    color:#4577ff;
+    position:absolute;top:50%; left:50%;transform:translate(-50%, -50%);
+    cursor:pointer;
+    box-sizing: border-box;
+    margin:0px auto;
+}
+.word p:hover{
+    color:#68896a;
+}
+.sketch img{
+    width:350px;
+    opacity:0.6;
+    position:absolute;bottom:1%;left:5%;
+}
+.wordbal{
+    width:500px;
+    height:240px;
+    border:5px solid rgb(173, 212, 255);
+    background:url(../img/sky.png)no-repeat;
+    background-position:center;
+    background-size:cover;
+    position:absolute;right:10%;bottom:25%;
+    text-align:left;
+    opacity:0.9;
+    display:none;   
+}
+.wordbal p{
+    width:65%;
+    margin:20px auto;
+    font-size:15px;
+    color:white;
+}
+.aboutstar{
+    width:80px;
+    position:absolute;right:22%;top:60%;
+    opacity:0
+}
+.aboutstar1{
+    width:130px;
+    position:absolute;top:8%;right:15%;
+    opacity:0.8
+}
+ 
+/*page3-Skills*/
+#skills{
+    width:100%;
+    height:100vh;
+    background:url(../img/skills.png)no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    position:relative;
+}
+#skills>img{
+    width:150px;
+    position:absolute;top:-8%;right:30%;
+    opacity:0.7
+}
+#skills>h2{
+    font-size:150px;
+    font-family: 'Bubblegum Sans', cursive;
+    color:white;
+    padding:90px 180px;
+    letter-spacing:10px;
+    opacity:0.8
+}
+#skills>h2 span{
+    color:#cbeee2; 
+}
+.percent{
+    width:70%;
+    height:140px;
+    display:flex;
+    justify-content: space-between;
+    margin:0px auto;
+    padding:30px;
+}
+.percent li:nth-child(4){margin-top:30px;}
+.percent li:nth-child(5){margin-top:30px;}
+.percent img{
+    width:100px;
+}
+.percent{
+    color:white;
+    text-align:center;
+    font-size:30px;
+}
+.skillsback img{
+    width:500px;
+    opacity:0.5;
+    position:absolute;bottom:1%;right:5%;
+}
+
+    
+
+
+
+
+
+
+/*page4*/
+
+            
